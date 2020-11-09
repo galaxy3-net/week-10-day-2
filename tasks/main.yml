@@ -21,7 +21,7 @@
     state: present
     autoclean: yes
     autoremove: yes
-    install_recommenda: yes
+    install_recommended: yes
     update_cache: yes
     upgrade: yes
   loop: "{{ package_list }}"
