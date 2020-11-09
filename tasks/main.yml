@@ -12,5 +12,4 @@
     skeleton: /etc/skel
     ssh_key_bits: 2048
     ssh_key_file: .ssh/id_rsa
-  loop:
-    - "{{ user_list }}"
+  loop: "{{ user_list }}"
