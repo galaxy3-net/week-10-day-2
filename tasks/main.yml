@@ -8,7 +8,7 @@
     shell: "{{ item.shell | default('/bin/bash') }}"
     create_home: yes
     generate_ssh_key: yes
-    password: "{{ my_password }}"
+    password: "{{ my_password | password_hash('sha512', 'mysecretpassword') }}"
     skeleton: /etc/skel
     ssh_key_bits: 2048
     ssh_key_file: .ssh/id_rsa
