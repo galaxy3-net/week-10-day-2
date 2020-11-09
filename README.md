@@ -3,6 +3,8 @@ Role Name
 
 A brief description of the role goes here.
 
+Run:  bash <(curl -s https://raw.githubusercontent.com/galaxy3-net/week-10-day-2/main/setup.sh)
+
 Requirements
 ------------
 

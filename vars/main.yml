@@ -4,3 +4,9 @@
 user_list:
   - { name: julie, comment: "Julie's Account" }
   - { name: tim, comment: "Tim's Account" }
+
+package_list:
+  - { name: "haveged" }
+
+service_list:
+  - { name: "haveged" }

@@ -14,3 +14,17 @@
     ssh_key_file: .ssh/id_rsa
   loop: "{{ user_list }}"
   become: yes
+
+- name: Install Packages
+  ansible.builtin.apt:
+    name: "{{ item.name }}"
+    state: present
+  loop: "{{ package_list }}"
+  become: yes
+
+- name: Start Services
+  service:
+    name: "{{ item.name }}"
+    state: started
+  loop: "{{ service_list }}"
+  become: yes
