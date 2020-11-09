@@ -19,6 +19,11 @@
   ansible.builtin.apt:
     name: "{{ item.name }}"
     state: present
+    autoclean: yes
+    autoremove: yes
+    install_recommenda: yes
+    update_cache: yes
+    upgrade: yes
   loop: "{{ package_list }}"
   become: yes
 
