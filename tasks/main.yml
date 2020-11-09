@@ -23,7 +23,6 @@
     autoremove: yes
     install_recommends: yes
     update_cache: yes
-    upgrade: yes
   loop: "{{ package_list }}"
   become: yes
 
